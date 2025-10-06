@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Crypto Site</title>
+  <title>Crypto Hub</title>
 
   <style>
-    /* Reset basic browser styling */
+    /* ========== RESET ========== */
     * {
       margin: 0;
       padding: 0;
@@ -19,10 +19,10 @@
       color: #f8fafc;
       display: flex;
       flex-direction: column;
-      height: 100vh;
+      min-height: 100vh;
     }
 
-    /* Navigation Bar */
+    /* ========== NAVIGATION BAR ========== */
     nav {
       background-color: #1e293b;
       display: flex;
@@ -35,6 +35,7 @@
     .logo {
       font-size: 1.5rem;
       font-weight: bold;
+      color: #38bdf8;
     }
 
     .nav-buttons {
@@ -47,14 +48,15 @@
       text-decoration: none;
       padding: 0.5rem 1rem;
       border-radius: 8px;
-      transition: 0.3s;
+      transition: all 0.3s ease;
     }
 
     .nav-buttons a:hover {
       background-color: #334155;
+      color: #38bdf8;
     }
 
-    /* Main Layout */
+    /* ========== MAIN LAYOUT ========== */
     .container {
       display: flex;
       flex: 1;
@@ -62,7 +64,7 @@
       gap: 2rem;
     }
 
-    /* Left Side (Images) */
+    /* LEFT SIDE: IMAGES */
     .image-section {
       flex: 1;
       display: flex;
@@ -76,9 +78,15 @@
       max-width: 250px;
       border-radius: 10px;
       object-fit: cover;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s ease;
     }
 
-    /* Center Section (Text) */
+    .image-section img:hover {
+      transform: scale(1.05);
+    }
+
+    /* CENTER: TEXT CONTENT */
     .text-section {
       flex: 2;
       background-color: #1e293b;
@@ -91,19 +99,28 @@
     .text-section h1 {
       margin-bottom: 1rem;
       font-size: 2rem;
+      color: #38bdf8;
     }
 
     .text-section p {
       font-size: 1.1rem;
       line-height: 1.6;
     }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background-color: #1e293b;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 
 <body>
-  <!-- Navigation Bar -->
+  <!-- NAVIGATION BAR -->
   <nav>
-    <div class="logo">CryptoHub</div>
+    <div class="logo">Crypto Hub</div>
     <div class="nav-buttons">
       <a href="#">Home</a>
       <a href="#">Crypto Miner</a>
@@ -111,22 +128,28 @@
     </div>
   </nav>
 
-  <!-- Main Section -->
+  <!-- MAIN CONTENT -->
   <div class="container">
-    <!-- Left: Images -->
+    <!-- LEFT: IMAGES -->
     <div class="image-section">
-      <img src="image1.jpg" alt="Crypto Image 1">
-      <img src="image2.jpg" alt="Crypto Image 2">
+      <img src="images/image1.jpg" alt="Crypto Image 1">
+      <img src="images/image2.jpg" alt="Crypto Image 2">
     </div>
 
-    <!-- Center: Text -->
+    <!-- CENTER: TEXT -->
     <div class="text-section">
-      <h1>Your Title Here</h1>
+      <h1>Your Title Goes Here</h1>
       <p>
-        This is where your main content or text will go. You can write about
-        crypto, your project, or anything else you’d like.
+        This is where your main text or content will go. You can write about
+        your crypto project, explain features, or include any message you want.
+        To change this, just open <b>index.html</b> in your editor and update the text inside the &lt;p&gt; tags.
       </p>
     </div>
   </div>
+
+  <!-- FOOTER -->
+  <footer>
+    © 2025 Crypto Hub. All rights reserved.
+  </footer>
 </body>
 </html>
